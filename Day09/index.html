@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 09</title>
+    <style>
+        div{
+            margin: 5px;
+        }
+        .burlywood_box{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+        }
+        .bg-red{
+            background-color: red;
+        }
+        .bg-grey{
+            background-color: burlywood;
+        }
+        #coloredBorderDiv{
+            height: 100px;
+            width: 100px;
+            border: 5px solid black;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul id="navbar_links">
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+    <p id="hello_para">Hello</p>
+    <p class="burlywood_box"></p>
+
+    <div id="removeable">This div will be removed</div>
+    <div id="parentBox">
+        <div class="childbox">This div is child box</div>
+        <div class="childbox">This div is child box</div>
+        <div class="childbox">This div is child box</div>
+        <div class="childbox">This child box will be removed</div>
+    </div>
+
+    <input type="password" name="password" id="passwordBox" class="bg-red">
+
+    <div>
+        <button id="changeBtn">change Hello world</button>
+    </div>
+
+    <div id="coloredBorderDiv"></div>
+    <script src="./index.js"></script>
+</body>
+</html>
