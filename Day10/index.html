@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 10</title>
+    <style>
+        #coloredDiv {
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+        }
+
+        form {
+            border: 2px solid black;
+        }
+
+        div {
+            margin: 5px;
+        }
+
+        #myForm {
+            text-align: center;
+            PADDING-bottom: 5PX;
+        }
+        .parentBox{
+            height: 120px;
+            width: 120px;
+            border: 2px solid salmon;
+        }
+        .childBox{
+            height: 100px;
+            width: 100px;
+            background-color:  greenyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Basic Event Handling -->
+    <p id="para1">user</p>
+
+    <button id="userBtn">greet user</button>
+
+    <!-- Mouse Events -->
+    <div>
+        <img src="./LOGO.png" alt="image" height="100px" id="toggleImage">
+    </div>
+
+    <p>double click image to toggle visivlity</p>
+
+    <div id="coloredDiv">hover on me</div>
+
+    <!-- Keyboard Events -->
+    <div>
+        <input type="text" id="keyInput">
+        <p id="keyView">Type something above<br>Your keys Go Here:</p>
+    </div>
+
+    <!-- Form Events -->
+    <form id="myForm">
+        My Form
+        <div>
+            <label for="emailInput">
+                <input type="email" name="email" id="emailInput" placeholder="Enter email">
+            </label>
+        </div>
+        <div>
+            <label for="passwordInput">
+                <input type="password" name="password" id="passwordInput" placeholder="Enter password">
+        </div>
+        <input type="submit" value="Submit">
+    <p style="text-align:  center;">submit and check the log</p>
+    </form>
+
+
+
+    <div>
+        <h3>Select Fruit</h3>
+        <select name="fruits" id="fruitsSelect">
+            <option value="none">select fruit</option>
+            <option value="mango">mango</option>
+            <option value="papaya">papaya</option>
+            <option value="orange">orange</option>
+        </select>
+
+        <span id="outputView"> No Fruits Selected</span>
+    </div>
+
+    <!-- Event Delegation -->
+    <ul id="navlist">
+        <li>Home</li>
+        <li>About</li>
+        <li>contact</li>
+    </ul>
+    <p>click on above list item to log the results</p>
+
+    <div class="parentBox"></div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
