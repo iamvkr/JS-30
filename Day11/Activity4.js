@@ -13,7 +13,7 @@ pm.then(data => console.log(data))
 // Task 7: Use the fetch API to get data from a public API and log the response data to the console using async/await.
 const getData = async (url) => {
     try {
-        const res = await fetch()
+        const res = await fetch(url)
         const data = await res.json(url);
         console.log(data)
     } catch (error) {
