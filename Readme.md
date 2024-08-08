@@ -56,10 +56,10 @@ A 30 day of javascript challenge practice session.
     - [Solution](https://github.com/iamvkr/JS-30/tree/main/Day16/)
 1. Day 17: Data Structures
     - [Activity](https://iamvkr.github.io/JS-30/Activities/day17.html)
-    - [Solution](https://github.com/iamvkr/JS-30/tree/main/Day17/)
+    - [Solution](https://github.com/iamvkr/JS-30/tree/main/Day17/) - pending
 1. Day 18: Algorithms
     - [Activity](https://iamvkr.github.io/JS-30/Activities/day18.html)
-    - [Solution](https://github.com/iamvkr/JS-30/tree/main/Day18/)
+    - [Solution](https://github.com/iamvkr/JS-30/tree/main/Day18/) - pending
 1. Day 19: Regular Expressions
     - [Activity](https://iamvkr.github.io/JS-30/Activities/day19.html)
     - [Solution](https://github.com/iamvkr/JS-30/tree/main/Day19/)
