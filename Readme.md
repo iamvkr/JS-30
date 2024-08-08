@@ -68,13 +68,13 @@ A 30 day of javascript challenge practice session.
     - [Solution](https://github.com/iamvkr/JS-30/tree/main/Day20/)
 1. Day 21: LeetCode Easy
     - [Activity](https://iamvkr.github.io/JS-30/Activities/day21.html)
-    - [Solution](https://github.com/iamvkr/JS-30/tree/main/Day21/)
+    - [Solution](https://github.com/iamvkr/JS-30/tree/main/Day21/) - pending
 1. Day 22: LeetCode Medium
     - [Activity](https://iamvkr.github.io/JS-30/Activities/day22.html)
-    - [Solution](https://github.com/iamvkr/JS-30/tree/main/Day22/)
+    - [Solution](https://github.com/iamvkr/JS-30/tree/main/Day22/) - pending
 1. Day 23: LeetCode Hard
     - [Activity](https://iamvkr.github.io/JS-30/Activities/day23.html)
-    - [Solution](https://github.com/iamvkr/JS-30/tree/main/Day23/)
+    - [Solution](https://github.com/iamvkr/JS-30/tree/main/Day23/) - pending
 1. Day 24: Project 1 - Weather App
     - [Activity](https://iamvkr.github.io/JS-30/Activities/day24.html)
     - [Solution](https://github.com/iamvkr/JS-30/tree/main/Day24/)

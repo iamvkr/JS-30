@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather APP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <nav class="bg-slate-200">
+        <div class="flex w-full md:w-[70%] md:mx-auto h-14  justify-between px-4">
+            <div class="brand flex items-center w-1/2">
+                <!-- <img src="" alt="" class="h-10 w-10 cover inline-block me-4"> -->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
+                    stroke="currentColor" class="w-8 h-8">
+                    <path strokeLinecap="round" strokeLinejoin="round"
+                        d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+                </svg>
+
+                <span class="text-nowrap font-bold text-xl">Weather App</span>
+            </div>
+            <ul class="h-full flex gap-x-2 items-center cursor-pointer">
+                <li class="hidden md:block">Home</li>
+                <li class="hidden md:block">About</li>
+                <!-- <li>Weekly</li> -->
+                <li id="Refresh">Refresh</li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <div class="flex w-full md:w-[70%] md:mx-auto justify-center px-4 my-4">
+            <input type="search" placeholder="Enter Your City"
+                class="SearchInput border border-2 rounded ps-2 outline-none">
+            <!-- search icon  -->
+            <div class="SearchIcon p-1 rounded bg-slate-600 text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                </svg>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="flex w-full md:w-[70%] md:mx-auto justify-center px-4 my-4">
+            <h4 class=" border rounded border-2 px-4 text-md">Current City:</h4>
+            <select name="selectCity" id="selectCity" class=" border rounded border-2 text-md">
+                <option value="mumbai">Mumbai</option>
+                <option value="delhi">Delhi</option>
+                <option value="kolkata">Kolkata</option>
+                <option value="chennai">Chennai</option>
+                <option value="patna">Patna</option>
+                <option value="bengluru">Bengluru</option>
+            </select>
+        </div>
+
+        <div>
+            <div class="conatiner text-center px-2">
+                <img src="https://openweathermap.org/themes/openweathermap/assets/img/logo_white_cropped.png"
+                    alt="Tempicon" class="w-40 h-10 object-contain bg-slate-600 inline-block mx-auto rounded p-1">
+                <div>
+                    <img class="w-14 h-14 object-contain inline-block mx-auto" id="tempIcon">
+                </div>
+                <h3 class="text-xl font-bold my-2">Current Weather Details:</h3>
+                <table class="inline-block ">
+                    <tbody id="populatedData">
+                    </tbody>
+                </table>
+
+                <h3 class="text-xl font-bold my-2">3-Hourly Weather Details:</h3>
+                <table class="inline-block text-sm">
+                    <tbody id="populatedWeekelyData">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <script src="./script/index.js"></script>
+</body>
+
+</html>
