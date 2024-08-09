@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Movie Listing Website</title>
+</head>
+
+<body class="bg-gray-100">
+    <header class="bg-white shadow">
+        <div class="container mx-auto flex justify-between items-center py-4 md:w-[80%] px-2">
+            <h1 class="text-2xl font-bold">Movie Finder</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="hover:text-gray-700">Home</a></li>
+                    <li><a href="#" class="hover:text-gray-700">Genres</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto py-8 md:w-[80%]">
+        <!-- search bar -->
+        <div class="relative flex mx-2 mb-4">
+            <input type="search" id="searchInput"
+                class="flex-1 p-2 pl-10 text-gray-700 bg-white border border-gray-200 rounded-l-md focus:border-blue-500 focus:ring-blue-500 sm:text-sm outline-none"
+                placeholder="Search" >
+            <button type="button" id="searchBtn"
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-r-md">Search</button>
+        </div>
+
+        <div class="text-center mb-4">Search Your Movie</div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 px-2 min-h-[70vh]" id="movieListView">
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-4 text-center">
+        copyright@movieFinder
+    </footer>
+
+    <section class="modal hidden fixed w-full h-screen top-0 left-0 flex justify-center bg-black/50 px-4 py-2 overflow-y-auto">
+        <div class="bg-white rounded shadow p-6 w-[450px] my-auto ">
+            <img id="modal_movie_poster" src="movie-poster.jpg" alt="Movie Poster"
+                class="w-full h-48 object-contain rounded-t">
+            <h2 id="modal_movie_title" class="text-lg font-bold mt-2">Movie Title</h2>
+            <div class="text-gray-700" id="modal_movie_details">
+                <!-- <p>2016 </p>
+                <p>8.0 </p>
+                <p>Action, Comedy </p>
+                <p>Tim Miller </p>
+                <p>Ryan Reynolds, Morena Baccarin, T.J. Miller </p>
+                <p>A wisecracking mercenary gets experimented on and becomes immortal yet hideously scarred, and sets
+                    out to track down the man who ruined his looks. </p>
+                <p>29 wins & 78 nominations </p>
+                <p>108 min </p> -->
+            </div>
+            <div>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4 block ms-auto"
+                    id="close_modal_btn">close</button>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="./index.js"></script>
+    <script src="./key.js"></script>
+</body>
+
+</html>
