@@ -20,7 +20,7 @@ const fetchCurrentWeather = async (city) => {
     try {
         const res = await fetch(url);
         const data = await res.json();
-        if (data.cod !== 200) {
+        if (data.cod != "200") {
             return false;
         }
         sessionStorage.setItem(`currWeather-${city}`, JSON.stringify(data)) //caching the data
@@ -104,7 +104,7 @@ const fetchForecastWeather = async (city) => {
     try {
         const res = await fetch(url);
         const data = await res.json();
-        if (data.cod !== 200) {
+        if (data.cod != "200") {
             return false;
         }
         sessionStorage.setItem(`currWeather-forecast-${city}`, JSON.stringify(data)) //caching the data
