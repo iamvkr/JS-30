@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="userLoginForm flex items-center justify-center ">
+        <!-- user login form -->
+        <form action="" id="form_user"
+            class="text-center border-2 my-4 p-4 rounded bg-slate-200 w-[300px] shadow shadow-black">
+            <h3 class="text-xl font-bold my-4">User Login</h3>
+            <label for="username">
+                <input type="text" name="username" id="username" placeholder="Enter Your Username"
+                    class="border-blue-600 border-2 rounded ps-2 outline-none">
+            </label>
+            <br>
+            <button type="submit" value="Login" class="px-2 py-1 bg-blue-600 text-white my-4 rounded">Login</button>
+        </form>
+    </div>
+
+
+    <div class="messageForm flex  justify-center h-screen flex-col pb-3 items-center hidden">
+        <h3 class="text-xl font-bold my-2">Hi Chat</h3>
+        <div class="flex w-[90%] md:w-[70%] justify-between px-8">
+            <h3 class="" id="connection_status">Loading...</h3>
+        <h3 class="mb-2" id="total_user_count">Total Users:</h3>
+        </div>
+        <!-- msg container box: -->
+        <div
+            class="message_container h-full shadow shadow-black bg-slate-200 w-[90%] md:w-[70%] overflow-y-auto py-2 px-1 flex flex-col justify-end">
+            <!-- card 
+            <div class="border-[1px] rounded p-2 w-2/3 border-black m-2 text-sm ms-auto">
+                <div class="flex items-center gap-x-2">
+                    <div class="icon bg-black text-white rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
+                            stroke="currentColor" class="w-8 h-8">
+                            <path strokeLinecap="round" strokeLinejoin="round"
+                                d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                        </svg>
+
+                    </div>
+                    <div class="">
+                        <div class="name font-bold" id="msg_username">name</div>
+                        <div class="message"id="msg_content">message</div>
+                    </div>
+                </div>
+            </div>
+             card end -->
+        </div>
+        <!-- send form -->
+        <form action="" id="form_message"
+            class="text-center w-[90%] md:w-[70%] rounded bg-slate-200 shadow shadow-black">
+
+            <label for="message">
+                <input type="text" name="message" id="message" placeholder="Send message"
+                    class="border-blue-600 border-2 rounded ps-2 outline-none">
+            </label>
+            <button type="submit" value="Send" class="px-2 py-1 bg-blue-600 text-white my-4 rounded">Send</button>
+        </form>
+    </div>
+
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
