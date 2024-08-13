@@ -10,13 +10,17 @@ const arr = [0, 1, false, 2, '', 3]
 const newArr = compact(arr); //removes all falsy values
 console.log(newArr);
 
-
-async function getProduct() {
-    try {
-      const response = await axios.get('https://dummyjson.com/products/1');
-      console.log(response.data);
-    } catch (error) {
-      console.error(error);
+  async function getProduct(productId) {
+    // Validate productId to ensure it's a valid path (e.g., using a regular expression)
+    if (!/^\d+$/.test(productId)) {
+        throw new Error('Invalid product ID');
     }
-  }
-getProduct()
+
+    try {
+        const response = await axios.get(`https://dummyjson.com/products/${productId}`);
+        console.log(response.data);
+    } catch (error) {
+        console.error(error);
+    }
+}
+getProduct(1)
