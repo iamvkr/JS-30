@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-zinc-800 ">
+    <nav class="bg-gray-400 min-h-14 flex items-center justify-between px-4 md:w-[90%] md:mx-auto rounded-md">
+        <div class="brand text-xl font-bold">Management App</div>
+        <div class="md:hidden block h-6 w-6">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="h-6 w-6">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>              
+        </div>
+        <ul class="hidden md:flex gap-x-2 font-semibold h-14 items-center ">
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li>CONTACT</li>
+        </ul>
+    </nav>
+
+    <header>
+        <div
+            class="p-3 h-20 bg-white text-black mx-8 rounded-xl mt-4 shadow shadow-white flex items-center justify-center md:w-[90%] md:mx-auto">
+            <h3 class="text-xl font-semibold text-center">Welcome to Management App</h3>
+        </div>
+    </header>
+
+    <main>
+        <section class="flex h-40 w-full px-4 md:px-0 gap-4 mt-4 flex-wrap md:flex-nowrap md:w-[90%] md:mx-auto ">
+            <div class="left  w-full md:h-[70vh] rounded-md bg-zinc-600 text-white">
+                <h3 class="text-xl text-center pt-4 bg-gray-400 text-black font-bold rounded-t-md">Add Task</h3>
+                <hr>
+                <form action="" id="add-form" class="border rounded-md m-4 p-2 text-center">
+                    <label for="title">
+                        Enter title:<br>
+                        <input required type="text" name="title" id="title" class="rounded ps-1  text-black w-1/2">
+                    </label> <br>
+                    <label for="desc">
+                        Enter Description:<br>
+                        <textarea required name="desc" id="desc" rows="4" class="rounded ps-1  text-black w-1/2"></textarea>
+                    </label> <br>
+                    <label for="dueDate">
+                        Enter Due Date:<br>
+                        <input required type="date" name="dueDate" id="dueDate" class="rounded ps-1  text-black w-1/2">
+                    </label>
+                    <br>
+                    <input type="hidden" name="formAction" id="formAction" value="">
+                    <button type="submit" value="Add" class="Add font-bold px-4 py-2 border rounded-md mt-4 bg-white text-black w-1/2">Add</button>
+                    <button type="submit" value="Update" class="Update hidden font-bold px-4 py-2 border rounded-md mt-4 bg-white text-black w-1/2">Update</button>
+                </form>
+            </div>
+
+
+            <div class="right w-full md:h-[70vh] rounded-md bg-zinc-600 text-white">
+                <h3 class="text-xl text-center pt-4 bg-gray-400 text-black font-bold rounded-t-md">Your Tasks</h3>
+                <hr>
+
+                <div class="taskList p-2 mb-4">
+
+                    <!-- <div class="task border rounded p-2 bg-white text-black mb-4">
+                        <div class="flex items-center">
+                            <div class="Details w-2/3">
+                                <div class="title text-xl font-bold underline">Hello</div>
+                                <div class="date">Date</div>
+                                <div class="desc text-sm">Desc</div>
+                            </div>
+                            <div class="Action w-1/3">
+                                <button class="px-4 py-2 border border-black rounded">Update</button>
+                                <button class="px-4 py-2 border border-black rounded">Delete</button>
+                            </div>
+                        </div>
+                    </div> -->
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
