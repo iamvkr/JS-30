@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="w-full md:w-[80%] mx-auto">
+    <nav>
+        <div class="flex gap-x-2 h-14 bg-gray-600 justify-between px-4 items-center text-white rounded-md">
+            <div class="brand text-xl font-bold">
+                E-commerce
+            </div>
+            <div class="links">
+                <ul class="flex gap-x-2">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li><button id="nav_add_cart_btn">Cart (<span id="cart_length_view">0</span>)</button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="box flex items-center justify-center h-20 border rounded-md m-4 shadow-md">
+            <h4 class="text-xl font-bold">Welcome to XYZ Shopping</h4>
+        </div>
+    </header>
+
+    <main>
+        <div class=" products_page min-h-[70vh]">
+            <div class="grid grid-cols-2 lg:grid-cols-3 px-4 gap-2" id="products_view">
+                <!-- here goes products card via js -->
+            </div>
+        </div>
+
+        <div class="hidden cart_page min-h-[70vh]">
+            <div class="flex justify-between px-4">
+                <h4 class="close_cart_page_btn text-lg font-bold w-1/2"><button> &lt; Back</button></h4>
+                <h4 class="text-lg font-bold w-1/2">Cart</h4>
+            </div>
+            <div class="px-4 gap-2" id="cart_view">
+                <!-- here goes cart itmes via js -->
+            </div>
+        </div>
+
+        <div class="hidden order_page min-h-[70vh]">
+            <div class="flex justify-between px-4">
+                <h4 class="close_order_page_btn text-lg font-bold w-1/2"><button> &lt; Back</button></h4>
+                <h4 class="text-lg font-bold w-1/2 -ms-4">Order Details</h4>
+            </div>
+            <div class="px-4 gap-2" id="order_view">
+                <!-- here goes order form -->
+                <form id="order-form" class="border rounded-md m-4 p-2">
+                    <label for="email">
+                        Enter Email:<br>
+                        <input required type="email" name="email" id="email" class="rounded ps-1 border w-full  text-black" placeholder="john@john.com"/>
+                    </label> <br>
+                    <label for="phone">
+                        Enter Phone:<br>
+                        <input required type="number" minlength="10" maxlength="10" name="phone" id="phone" class="rounded ps-1 border w-full  text-black" placeholder="1122334455"/>
+                    </label> <br>
+                    <label for="address">
+                        Enter Address:<br>
+                        <input required type="text" name="address" id="address" class="rounded ps-1 border w-full  text-black" placeholder="John Street, CA"/>
+                    </label> <br>
+                    <br>
+                    <div>Amount: <span id="total_amt_order_page"></span> </div>
+                    <button type="submit" class="font-bold px-4 py-2 border rounded-md mt-4 bg-white text-black w-full">Place Order</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-sm text-center mt-4 mb-2">copyright @2024</footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

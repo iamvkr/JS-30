@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "title": "Sports Sneakers Off White Red",
+        "description": "Another variant of the Sports Sneakers in Off White Red, featuring a unique design. These sneakers offer style and comfort for casual occasions.",
+        "category": "mens-shoes",
+        "price": 8799,
+        "images": "https://cdn.dummyjson.com/products/images/mens-shoes/Sports%20Sneakers%20Off%20White%20Red/1.png"
+    },
+    {
+        "id": 2,
+        "title": "Sports Sneakers Off White & Red",
+        "description": "The Sports Sneakers in Off White and Red combine style and functionality, making them a fashionable choice for sports enthusiasts. The red and off-white color combination adds a bold and energetic touch.",
+        "category": "mens-shoes",
+        "price": 9599,
+        "images": "https://cdn.dummyjson.com/products/images/mens-shoes/Sports%20Sneakers%20Off%20White%20&%20Red/1.png"
+    },
+    {
+        "id": 3,
+        "title": "Puma Future Rider Trainers",
+        "description": "The Puma Future Rider Trainers offer a blend of retro style and modern comfort. Perfect for casual wear, these trainers provide a fashionable and comfortable option for everyday use.",
+        "category": "mens-shoes",
+        "price": 7199,
+        "images": "https://cdn.dummyjson.com/products/images/mens-shoes/Puma%20Future%20Rider%20Trainers/1.png"
+    },
+    {
+        "id": 4,
+        "title": "Nike Baseball Cleats",
+        "description": "Nike Baseball Cleats are designed for maximum traction and performance on the baseball field. They provide stability and support for players during games and practices.",
+        "category": "mens-shoes",
+        "price": 6399,
+        "images": "https://cdn.dummyjson.com/products/images/mens-shoes/Nike%20Baseball%20Cleats/1.png"
+    },
+    {
+        "id": 5,
+        "title": "Nike Air Jordan 1 Red And Black",
+        "description": "The Nike Air Jordan 1 in Red and Black is an iconic basketball sneaker known for its stylish design and high-performance features, making it a favorite among sneaker enthusiasts and athletes.",
+        "category": "mens-shoes",
+        "price": 11999,
+        "images": "https://cdn.dummyjson.com/products/images/mens-shoes/Nike%20Air%20Jordan%201%20Red%20And%20Black/1.png"
+    },
+    {
+        "id": 6,
+        "title": "Brown Leather Belt Watch",
+        "description": "The Brown Leather Belt Watch is a stylish timepiece with a classic design. Featuring a genuine leather strap and a sleek dial, it adds a touch of sophistication to your look.",
+        "category": "mens-watches",
+        "price": 7199,
+        "images": "https://cdn.dummyjson.com/products/images/mens-watches/Brown%20Leather%20Belt%20Watch/1.png"
+    },
+    {
+        "id": 7,
+        "title": "Longines Master Collection",
+        "description": "The Longines Master Collection is an elegant and refined watch known for its precision and craftsmanship. With a timeless design, it's a symbol of luxury and sophistication.",
+        "category": "mens-watches",
+        "price": 119999,
+        "images": "https://cdn.dummyjson.com/products/images/mens-watches/Longines%20Master%20Collection/1.png"
+    },
+    {
+        "id": 8,
+        "title": "Rolex Cellini Date Black Dial",
+        "description": "The Rolex Cellini Date with Black Dial is a classic and prestigious watch. With a black dial and date complication, it exudes sophistication and is a symbol of Rolex's heritage.",
+        "category": "mens-watches",
+        "price": 719999,
+        "images": "https://cdn.dummyjson.com/products/images/mens-watches/Rolex%20Cellini%20Date%20Black%20Dial/1.png"
+    },
+    {
+        "id": 9,
+        "title": "Rolex Cellini Moonphase",
+        "description": "The Rolex Cellini Moonphase is a masterpiece of horology, featuring a moon phase complication and exquisite design. It reflects Rolex's commitment to precision and elegance.",
+        "category": "mens-watches",
+        "price": 1039999,
+        "images": "https://cdn.dummyjson.com/products/images/mens-watches/Rolex%20Cellini%20Moonphase/1.png"
+    },
+    {
+        "id": 10,
+        "title": "Rolex Datejust",
+        "description": "The Rolex Datejust is an iconic and versatile timepiece with a date window. Known for its timeless design and reliability, it's a symbol of Rolex's watchmaking excellence.",
+        "category": "mens-watches",
+        "price": 879999,
+        "images": "https://cdn.dummyjson.com/products/images/mens-watches/Rolex%20Datejust/1.png"
+    },
+    {
+        "id": 11,
+        "title": "Rolex Submariner Watch",
+        "description": "The Rolex Submariner is a legendary dive watch with a rich history. Known for its durability and water resistance, it's a symbol of adventure and exploration.",
+        "category": "mens-watches",
+        "price": 1119999,
+        "images": "https://cdn.dummyjson.com/products/images/mens-watches/Rolex%20Submariner%20Watch/1.png"
+    },
+    {
+        "id": 12,
+        "title": "Leather Belt Watch Max",
+        "description": "The Brown Leather Belt Watch is a stylish timepiece with a mordern design. Featuring a genuine leather strap and a sleek dial, it adds a touch of sophistication to your look.",
+        "category": "mens-watches",
+        "price": 5999,
+        "images": "https://cdn.dummyjson.com/products/images/mens-watches/Brown%20Leather%20Belt%20Watch/1.png"
+    }
+]
