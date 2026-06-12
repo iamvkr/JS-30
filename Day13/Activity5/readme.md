@@ -17,6 +17,6 @@ recommeded to use updated version of packages lodash
     "webpack-cli": "^5.1.4"
   },
   "dependencies": {
-    "lodash": "^4.17.21"
+    "lodash": "^4.18.1"
   }
 }
