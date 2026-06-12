@@ -1,3 +1,6 @@
+Due to security issue scan in github, currently need to manually create package.json
+recommeded to use updated version of packages lodash and axios
+
 {
   "name": "activity4",
   "version": "1.0.0",
